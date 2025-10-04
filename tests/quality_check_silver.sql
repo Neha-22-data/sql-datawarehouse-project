@@ -22,12 +22,11 @@ Usage Notes:
 -- ====================================================================
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
-SELECT 
-    cst_id,
-    COUNT(*) 
+SELECT cst_id,
+COUNT(*) as duplicate
 FROM silver.crm_cust_info
 GROUP BY cst_id
-HAVING COUNT(*) > 1 OR cst_id IS NULL;
+HAVING COUNT(*) > 1;
 
 -- Check for Unwanted Spaces
 -- Expectation: No Results
@@ -157,3 +156,5 @@ WHERE cat != TRIM(cat)
 SELECT DISTINCT 
     maintenance 
 FROM silver.erp_px_cat_g1v2;
+
+

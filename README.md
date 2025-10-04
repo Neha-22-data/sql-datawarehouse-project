@@ -1,2 +1,3 @@
-# sql-datawarehouse-project
-Building a modern Data warehouse with AWS Redshift, Including ETL processes, data modelling and analytics
+# Data Warehouse Project
+Welcome to the Data Warehouse and Analytics Project repository! 
+This project demonstrates a comprehensive data warehousing solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
